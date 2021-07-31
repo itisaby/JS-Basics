@@ -1,97 +1,97 @@
- console.log("hello world");
+console.log("hello world");
 //  first.innerHTML = "<h2>Hello bro</h2>";
 
 // javascript variables
- var num1 = 34;
- var num2 = 56;
- console.log(num1 + num2);
+var num1 = 34;
+var num2 = 56;
+console.log(num1 + num2);
 
 // Datatypes in javascript
 
 // Numbers
- var num3 = 123;
+var num3 = 123;
 
 //Strings
- var str1 = "This is a String";
- var str2 = "This is also a String";
+var str1 = "This is a String";
+var str2 = "This is also a String";
 
 // Objects
- var marks = {
+var marks = {
     arnab: 223,
-     maity: 123,
+    maity: 123,
     harish: 99.92
- }
+}
 
 //Booleans
- var a = true;
- var b = false;
+var a = true;
+var b = false;
 
 
- console.log(num3);
- console.log(str1);
- console.log(str2);
- console.log(str1 +" "+ str2);
+console.log(num3);
+console.log(str1);
+console.log(str2);
+console.log(str1 + " " + str2);
 
- console.log(marks);
+console.log(marks);
 
- console.log(a);
- console.log(b);
+console.log(a);
+console.log(b);
 
- var u = undefined;
- var u1;  // By default value is undefined.
- console.log(u);
- console.log(u1);
+var u = undefined;
+var u1;  // By default value is undefined.
+console.log(u);
+console.log(u1);
 
- var n = null;
- console.log(n);
+var n = null;
+console.log(n);
 
 // At a high level, there are two types of data types in javascript
 // -> primitive Datatypes: undefined, null, number, string, boolean, symbol
 // -> Reference Datatypes: Arrays and Objects
 
- var arr = [1, 2, 3, 4, 5];
- console.log(arr);
- var arr1 = [1, 2, "bablu", 3, 4];
- console.log(arr1)
- console.log(arr1[2])
+var arr = [1, 2, 3, 4, 5];
+console.log(arr);
+var arr1 = [1, 2, "bablu", 3, 4];
+console.log(arr1)
+console.log(arr1[2])
 
 
 
 // Operators in JavaScript
 
 //Arithmetic Operators
- var a = 100;
- var b = 10;
+var a = 100;
+var b = 10;
 
- console.log("The value of a + b", a+b);
- console.log("The value of a - b", a-b);
- console.log("The value of a * b", a*b);
- console.log("The value of a / b", a/b);
+console.log("The value of a + b", a + b);
+console.log("The value of a - b", a - b);
+console.log("The value of a * b", a * b);
+console.log("The value of a / b", a / b);
 
 //Assignment Operators
- var c = b;
- c+=2;
- c-=2;
- console.log(c);
+var c = b;
+c += 2;
+c -= 2;
+console.log(c);
 
 //Comparison Operator 
- var x = 34;
- var y = 56;
- console.log(x==y)
- console.log(x>=y)
- console.log(x<=y)
- console.log(x>y)
- console.log(x<y)
+var x = 34;
+var y = 56;
+console.log(x == y)
+console.log(x >= y)
+console.log(x <= y)
+console.log(x > y)
+console.log(x < y)
 
 // Logical Operators
- console.log(true && false);
+console.log(true && false);
 // console.log(true || false);
 
- console.log(!true)
- console.log(!false)
+console.log(!true)
+console.log(!false)
 
 function avg(a1, b1) {
-    return (a1+b1)/2;
+    return (a1 + b1) / 2;
 }
 
 c1 = avg(4, 6);
@@ -102,26 +102,26 @@ console.log(c1, c2);
 //Conditionals in JS
 
 var age = 36;
-if(age>6){
+if (age > 6) {
     console.log("You are not a kid");
 }
-else{
+else {
     console.log("You are a kid");
 }
 
 console.log("only if statement");
-if(age>18){
+if (age > 18) {
     console.log("You are eligible to vote");
 }
 
 console.log("Start of if else ladder")
-if(age<2){
+if (age < 2) {
     console.log("You are a baby")
 }
-else if(age>56){
+else if (age > 56) {
     console.log("You are getting old");
 }
-else{
+else {
     console.log("You are young enough")
 }
 
@@ -130,29 +130,29 @@ console.log("End of if else ladder")
 
 // Loops in JS
 
-var array = [1,2,3,4,5,6];
-for(var i=0; i<array.length; i++){
+var array = [1, 2, 3, 4, 5, 6];
+for (var i = 0; i < array.length; i++) {
     console.log(array[i]);
 }
 
 //For each loop
-array.forEach(function(element){
+array.forEach(function (element) {
     console.log(element)
 })
- 
+
 // while loop
 let j = 0;
-while(j < array.length){
+while (j < array.length) {
     console.log(array[j]);
     j++;
 }
 
 // Do While loop
-let k=0;
-do{
+let k = 0;
+do {
     console.log(array[k]);
     k++;
-}while(k < array.length);
+} while (k < array.length);
 
 
 
@@ -161,7 +161,7 @@ do{
 let myarray = ["Faang", "Camera", 34, null, true];
 
 //Finding length of array
-console.log(myarray.length); 
+console.log(myarray.length);
 
 // Removing the last element in the array
 myarray.pop();
@@ -186,14 +186,14 @@ console.log(newlen);
 //converting array to string 
 console.log(myarray.toString());
 
-let myarray2 = [2, 13, 45, 5, 44,52];
+let myarray2 = [2, 13, 45, 5, 44, 52];
 //Sorting an array 
 myarray2.sort();
 console.log(myarray2.sort());
 
 
 // String Methods in JS 
-let  mystring = "I am a good boy good"
+let mystring = "I am a good boy good"
 
 //Printing the length of the string
 console.log(mystring.length);
@@ -266,3 +266,83 @@ create2 = document.createElement('b');
 create2.innerText = "Created a bold para";
 tn[0].replaceChild(create2, create);
 
+// selecting using Query
+sel = document.querySelector('.container');
+console.log(sel);
+sel = document.querySelectorAll('.container');
+console.log(sel);
+
+// Events in JS
+function clicked() {
+    console.log('clicked');
+}
+
+window.onload = function () {
+    console.log('Window is loaded');
+}
+
+// first.addEventListener('click',function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>";
+//     console.log('Click hua hai container me');
+// })
+// first.addEventListener('mouseover',function(){
+//     console.log('Mouse hai container me');
+// })
+// first.addEventListener('mouseout',function(){
+    //     console.log('Mouse out of container');
+    // })
+    let prevHTML = document.querySelectorAll('.container')[1].innerHTML
+    first.addEventListener('mouseup', function () {
+        document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+        console.log('Mouse up when clicked on container');
+    })
+    
+    first.addEventListener('mousedown', function () {
+        document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>";
+        console.log('Mouse down when clicked on container');
+    })
+    
+    
+    
+    
+    //Arrow Function
+    function sum(a, b){
+        return a+b;
+    }
+    
+    summ = (a,b) =>{
+        return a+b;
+    }
+    
+    // setTimeout and setInterval
+    
+    // SetTimeout
+    login = ()=>{
+        console.log("I am your log")
+        document.querySelectorAll('.container')[1].innerHTML = "<b> SetInterval Fired</b>";
+    }
+    
+    setTimeout(login, 2000);
+    
+
+    // SetInterval
+    clr = setInterval(login, 2000);
+    // use clearInterval and clearTimeout to cancel setInterval/setTimeout
+
+
+
+    // Local Storage in JS
+    localStorage.setItem('name','arnab')
+    localStorage.getItem('name')
+    localStorage.removeItem('name')
+    localStorage.setItem('name','maity')
+
+
+
+    //JSON
+    obj = {name: 'arnab', length: 1}
+    jso = JSON.stringify(obj);
+    console.log(typeof jso);
+    console.log(jso);
+    parsed = JSON.parse(`{"name":"arnab","length":1}`)
+    console.log(parsed)
