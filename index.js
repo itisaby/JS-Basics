@@ -99,3 +99,30 @@ c2 = avg(12, 14);
 console.log(c1, c2);
 
 
+//Conditionals in JS
+
+var age = 36;
+if(age>6){
+    console.log("You are not a kid");
+}
+else{
+    console.log("You are a kid");
+}
+
+
+if(age>18){
+    console.log("You are eligible to vote");
+}
+
+
+if(age<2){
+    console.log("You are a baby")
+}
+else if(age>56){
+    console.log("You are getting old");
+}
+else{
+    console.log("You are young enough")
+}
+
+
