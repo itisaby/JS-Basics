@@ -239,5 +239,30 @@ console.log(myDate.getMinutes());
 console.log(myDate.getHours());
 
 
+// DOM Manipulation
 
+let el = document.getElementById('click')
+console.log(el);
+let cl = document.getElementsByClassName('container')
+console.log(cl);
+
+//Modifying style of a class
+// cl[0].style.backgroundColor = "yellow";
+
+//Adding class to a class 
+cl[0].classList.add("bg-primary");
+cl[0].classList.add("text-success");
+
+console.log(cl[0].innerHTML);
+console.log(cl[0].innerText);
+
+tn = document.getElementsByTagName('div');
+console.log(tn);
+create = document.createElement('p');
+create.innerText = "Created a para";
+tn[0].appendChild(create);
+
+create2 = document.createElement('b');
+create2.innerText = "Created a bold para";
+tn[0].replaceChild(create2, create);
 
