@@ -109,12 +109,12 @@ else{
     console.log("You are a kid");
 }
 
-
+console.log("only if statement");
 if(age>18){
     console.log("You are eligible to vote");
 }
 
-
+console.log("Start of if else ladder")
 if(age<2){
     console.log("You are a baby")
 }
@@ -124,5 +124,120 @@ else if(age>56){
 else{
     console.log("You are young enough")
 }
+
+console.log("End of if else ladder")
+
+
+// Loops in JS
+
+var array = [1,2,3,4,5,6];
+for(var i=0; i<array.length; i++){
+    console.log(array[i]);
+}
+
+//For each loop
+array.forEach(function(element){
+    console.log(element)
+})
+ 
+// while loop
+let j = 0;
+while(j < array.length){
+    console.log(array[j]);
+    j++;
+}
+
+// Do While loop
+let k=0;
+do{
+    console.log(array[k]);
+    k++;
+}while(k < array.length);
+
+
+
+// Array methods in JS
+
+let myarray = ["Faang", "Camera", 34, null, true];
+
+//Finding length of array
+console.log(myarray.length); 
+
+// Removing the last element in the array
+myarray.pop();
+console.log(myarray);
+
+// adding an element to the array
+myarray.push("arnab");
+console.log(myarray);
+
+// Removing an element to the array in the head
+myarray.shift();
+console.log(myarray);
+
+// adding an element to the array in the head
+myarray.unshift("Math");
+console.log(myarray);
+
+
+const newlen = myarray.unshift("Python");
+console.log(newlen);
+
+//converting array to string 
+console.log(myarray.toString());
+
+let myarray2 = [2, 13, 45, 5, 44,52];
+//Sorting an array 
+myarray2.sort();
+console.log(myarray2.sort());
+
+
+// String Methods in JS 
+let  mystring = "I am a good boy good"
+
+//Printing the length of the string
+console.log(mystring.length);
+
+//Getting the first index of the word passed by
+console.log(mystring.indexOf("good"));
+
+//Getting the last index of the word passed by
+console.log(mystring.lastIndexOf("good"));
+
+//String Slicing
+console.log(mystring.slice(3, 8));
+
+// Replacing a word in a string 
+let d1 = mystring.replace("boy", "girl");
+console.log(d1);
+console.log(mystring)
+
+d1 = d1.replace("good", "bad");
+console.log(d1);
+
+
+
+// Dates in JS 
+
+// Creating a new Date
+let myDate = new Date();
+console.log(myDate);
+
+// getting the full time in seconds
+console.log(myDate.getTime());
+
+// fetching the year 
+console.log(myDate.getFullYear());
+
+//fetching the day
+console.log(myDate.getDay());
+
+// fetching the minutes
+console.log(myDate.getMinutes());
+
+// fetching the hours
+console.log(myDate.getHours());
+
+
 
 
